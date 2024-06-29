@@ -1,0 +1,62 @@
+--Queries
+
+1) 
+
+SELECT s.*, COUNT(p.ProductID) AS ProductCount
+FROM Suppliers s
+LEFT JOIN Products p ON s.SupplierID = p.SupplierID
+GROUP BY s.SupplierID
+ORDER BY s.SupplierID;
+
+2)
+
+SELECT 
+    p.ProductID,
+    p.Name AS ProductName,
+    SUM(oi.Quantity) AS TotalQuantitySold,
+    s.FirstName AS SupplierFirstName,
+    s.LastName AS SupplierLastName
+FROM OrderItems oi
+JOIN Products p ON oi.ProductID = p.ProductID
+JOIN Suppliers s ON p.SupplierID = s.SupplierID
+GROUP BY p.ProductID
+ORDER BY TotalQuantitySold DESC
+LIMIT 10;
+
+3)
+
+SELECT 
+    c.CustomerID,
+    c.FirstName,
+    c.LastName,
+    SUM(oi.Quantity * oi.Price) AS TotalPurchases
+FROM Customers c
+JOIN Orders o ON c.CustomerID = o.CustomerID
+JOIN OrderItems oi ON o.OrderID = oi.OrderID
+GROUP BY c.CustomerID
+
+4)
+
+SELECT p.Name AS ProductName, r.ReturnQuantity AS ReturnedQuantity, r.ReturnReason
+FROM ReturnedItems r
+INNER JOIN OrderItems oi ON r.OrderItemID = oi.OrderItemID
+INNER JOIN Products p ON oi.ProductID = p.ProductID
+ORDER BY r.ReturnID;
+
+5)
+
+SELECT 
+    p.ProductID,
+    p.Name AS ProductName,
+    o.OrderDate,
+    c.Name as CategoryName,
+    oi.Quantity,
+    oi.Price
+FROM Products p
+JOIN Categories c ON p.CategoryID = c.CategoryID
+JOIN OrderItems oi ON p.ProductID = oi.ProductID
+JOIN Orders o ON oi.OrderID = o.OrderID
+WHERE 
+    c.Name = 'Fashion'
+    AND o.OrderDate >= DATE_SUB(CURDATE(), INTERVAL 1 MONTH)
+    AND o.OrderDate < CURDATE();

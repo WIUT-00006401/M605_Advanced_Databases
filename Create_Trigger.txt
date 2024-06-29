@@ -1,0 +1,36 @@
+DELIMITER //
+
+CREATE TRIGGER check_return_quantity
+BEFORE INSERT ON ReturnedItems
+FOR EACH ROW
+BEGIN
+    DECLARE original_quantity INT;
+    DECLARE total_returned_quantity INT;
+
+    -- Get the original quantity from the OrderItems table
+    SELECT Quantity INTO original_quantity
+    FROM OrderItems
+    WHERE OrderItemID = NEW.OrderItemID;
+
+    -- Calculate the total returned quantity for this OrderItemID including the new row
+    SELECT COALESCE(SUM(ReturnQuantity), 0) INTO total_returned_quantity
+    FROM ReturnedItems
+    WHERE OrderItemID = NEW.OrderItemID;
+
+    SET total_returned_quantity = total_returned_quantity + NEW.ReturnQuantity;
+
+    -- Check if the total returned quantity is greater than the original quantity
+    IF total_returned_quantity > original_quantity THEN
+        SIGNAL SQLSTATE '45000' 
+        SET MESSAGE_TEXT = 'Total return quantity exceeds the original order quantity';
+    END IF;
+END //
+
+DELIMITER ;
+
+
+INSERT INTO ReturnedItems (OrderItemID, ReturnQuantity) VALUES (1, 1);
+
+select * from returneditems r 
+
+select * from orderitems o where o.OrderItemID = 1

@@ -1,0 +1,83 @@
+
+CREATE TABLE Customers (
+    CustomerID INT PRIMARY KEY AUTO_INCREMENT,
+    FirstName VARCHAR(50) NOT NULL,
+    LastName VARCHAR(50) NOT NULL,
+    Email VARCHAR(100) UNIQUE,
+    LastLoginTime TIMESTAMP,
+    Password VARCHAR(200),
+    Address VARCHAR(200),
+    Phone VARCHAR(20)    
+);
+
+CREATE TABLE Suppliers(
+    SupplierID INT PRIMARY KEY AUTO_INCREMENT,
+    FirstName VARCHAR(50) NOT NULL,
+    LastName VARCHAR(50) NOT NULL,
+    Email VARCHAR(100) UNIQUE,
+    LastLoginTime TIMESTAMP,
+    Password VARCHAR(200),
+    Address VARCHAR(200),
+    Phone VARCHAR(20)    
+);
+
+CREATE TABLE Categories (
+    CategoryID INT PRIMARY KEY AUTO_INCREMENT,
+    Name VARCHAR(100)
+);
+
+CREATE TABLE Products (
+    ProductID INT PRIMARY KEY AUTO_INCREMENT,
+    Name VARCHAR(100) NOT NULL,
+    Description TEXT,
+    Price DECIMAL(10, 2),
+    Images TEXT,
+    Comment TEXT,
+    SupplierID INT,
+    CategoryID INT,
+    FOREIGN KEY (SupplierID) REFERENCES Suppliers(SupplierID),
+    FOREIGN KEY (CategoryID) REFERENCES Categories(CategoryID)
+);
+
+CREATE TABLE Orders (
+    OrderID INT PRIMARY KEY AUTO_INCREMENT,
+    Description TEXT,
+    OrderDate TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    CustomerID INT,
+    FOREIGN KEY (CustomerID) REFERENCES Customers(CustomerID)
+);
+
+CREATE TABLE OrderItems (
+    OrderItemID INT PRIMARY KEY AUTO_INCREMENT,
+    Quantity INT,
+    Price DECIMAL(10, 2),
+    OrderID INT,
+    ProductID INT,
+    FOREIGN KEY (OrderID) REFERENCES Orders(OrderID),
+    FOREIGN KEY (ProductID) REFERENCES Products(ProductID)
+);
+
+CREATE TABLE ReturnedItems (
+    ReturnID INT PRIMARY KEY AUTO_INCREMENT,
+    ReturnDate TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    ReturnReason TEXT,
+    ReturnQuantity INT,
+    OrderItemID INT,
+    FOREIGN KEY (OrderItemID) REFERENCES OrderItems(OrderItemID)
+);
+
+CREATE TABLE Tags (
+    TagID INT PRIMARY KEY AUTO_INCREMENT,
+    Name VARCHAR(100) NOT NULL UNIQUE
+);
+
+CREATE TABLE ProductTags (
+    ProductTagID INT PRIMARY KEY AUTO_INCREMENT,
+    ProductID INT,
+    TagID INT,
+    FOREIGN KEY (ProductID) REFERENCES Products(ProductID),
+    FOREIGN KEY (TagID) REFERENCES Tags(TagID),
+    UNIQUE (ProductID, TagID)
+);
+
+

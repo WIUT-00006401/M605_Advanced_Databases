@@ -1,0 +1,34 @@
+DELIMITER //
+
+CREATE PROCEDURE AddOrder (
+    IN p_Description TEXT,
+    IN p_CustomerID INT,
+    IN p_ProductID INT,
+    IN p_Quantity INT,
+    IN p_Price DECIMAL(10,2)
+)
+BEGIN
+    DECLARE newOrderID INT;
+
+    -- Insert into Orders table
+    INSERT INTO Orders (Description, CustomerID)
+    VALUES (p_Description, p_CustomerID);
+    
+    -- Get the last inserted OrderID
+    SET newOrderID = LAST_INSERT_ID();
+    
+    -- Insert into OrderItems table
+    INSERT INTO OrderItems (Quantity, Price, OrderID, ProductID)
+    VALUES (p_Quantity, p_Price, newOrderID, p_ProductID);
+END //
+
+DELIMITER ;
+
+--Testing:
+
+CALL AddOrder('Test Order Description', 1, 20, 5, 20.00);
+
+SELECT * FROM Orders;
+
+SELECT * FROM OrderItems;
+

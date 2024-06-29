@@ -1,0 +1,208 @@
+INSERT INTO Customers (FirstName, LastName, Email, LastLoginTime, Password, Address, Phone) VALUES
+('John', 'Doe', 'john.doe@example.com', '2024-06-22 10:00:00', 'passwordhash1', '123 Main St, City A, Country X', '123-456-7890'),
+('Jane', 'Smith', 'jane.smith@example.com', '2024-06-21 09:30:00', 'passwordhash2', '456 Elm St, City B, Country Y', '234-567-8901'),
+('Alice', 'Johnson', 'alice.johnson@example.com', '2024-06-20 08:45:00', 'passwordhash3', '789 Oak St, City C, Country Z', '345-678-9012'),
+('Bob', 'Brown', 'bob.brown@example.com', '2024-06-19 07:15:00', 'passwordhash4', '321 Pine St, City D, Country X', '456-789-0123'),
+('Charlie', 'Davis', 'charlie.davis@example.com', '2024-06-18 06:30:00', 'passwordhash5', '654 Cedar St, City E, Country Y', '567-890-1234'),
+('Dana', 'Wilson', 'dana.wilson@example.com', '2024-06-17 05:45:00', 'passwordhash6', '987 Birch St, City F, Country Z', '678-901-2345'),
+('Eve', 'Martinez', 'eve.martinez@example.com', '2024-06-16 04:30:00', 'passwordhash7', '432 Spruce St, City G, Country X', '789-012-3456'),
+('Frank', 'Garcia', 'frank.garcia@example.com', '2024-06-15 03:15:00', 'passwordhash8', '876 Maple St, City H, Country Y', '890-123-4567'),
+('Grace', 'Clark', 'grace.clark@example.com', '2024-06-14 02:00:00', 'passwordhash9', '321 Fir St, City I, Country Z', '901-234-5678'),
+('Hank', 'Lee', 'hank.lee@example.com', '2024-06-13 01:45:00', 'passwordhash10', '654 Willow St, City J, Country X', '012-345-6789'),
+('Ivy', 'Walker', 'ivy.walker@example.com', '2024-06-12 12:30:00', 'passwordhash11', '987 Aspen St, City K, Country Y', '123-456-7891'),
+('Jack', 'Young', 'jack.young@example.com', '2024-06-11 11:15:00', 'passwordhash12', '432 Palm St, City L, Country Z', '234-567-8902'),
+('Kathy', 'Allen', 'kathy.allen@example.com', '2024-06-10 10:00:00', 'passwordhash13', '876 Oakwood St, City M, Country X', '345-678-9013'),
+('Larry', 'Scott', 'larry.scott@example.com', '2024-06-09 09:30:00', 'passwordhash14', '321 Redwood St, City N, Country Y', '456-789-0124'),
+('Mona', 'Hill', 'mona.hill@example.com', '2024-06-08 08:45:00', 'passwordhash15', '654 Pinecone St, City O, Country Z', '567-890-1235'),
+('Nate', 'King', 'nate.king@example.com', '2024-06-07 07:15:00', 'passwordhash16', '987 Cedarwood St, City P, Country X', '678-901-2346'),
+('Olivia', 'Perez', 'olivia.perez@example.com', '2024-06-06 06:30:00', 'passwordhash17', '432 Birchwood St, City Q, Country Y', '789-012-3457'),
+('Paul', 'Taylor', 'paul.taylor@example.com', '2024-06-05 05:45:00', 'passwordhash18', '876 Sprucewood St, City R, Country Z', '890-123-4568'),
+('Quinn', 'Adams', 'quinn.adams@example.com', '2024-06-04 04:30:00', 'passwordhash19', '321 Maplewood St, City S, Country X', '901-234-5679'),
+('Rachel', 'Baker', 'rachel.baker@example.com', '2024-06-03 03:15:00', 'passwordhash20', '654 Firwood St, City T, Country Y', '012-345-6780');
+
+INSERT INTO Suppliers (FirstName, LastName, Email, LastLoginTime, Password, Address, Phone) VALUES
+('Michael', 'Smith', 'michael.smith@supplier.com', '2024-06-22 10:00:00', 'supplierpass1', '12 Supplier St, City A, Country X', '123-456-7890'),
+('Emma', 'Jones', 'emma.jones@supplier.com', '2024-06-21 09:30:00', 'supplierpass2', '34 Vendor St, City B, Country Y', '234-567-8901'),
+('Liam', 'Brown', 'liam.brown@supplier.com', '2024-06-20 08:45:00', 'supplierpass3', '56 Distributor St, City C, Country Z', '345-678-9012'),
+('Sophia', 'Davis', 'sophia.davis@supplier.com', '2024-06-19 07:15:00', 'supplierpass4', '78 Wholesaler St, City D, Country X', '456-789-0123'),
+('James', 'Miller', 'james.miller@supplier.com', '2024-06-18 06:30:00', 'supplierpass5', '90 Manufacturer St, City E, Country Y', '567-890-1234'),
+('Olivia', 'Wilson', 'olivia.wilson@supplier.com', '2024-06-17 05:45:00', 'supplierpass6', '12 Supplier Ave, City F, Country Z', '678-901-2345'),
+('Noah', 'Moore', 'noah.moore@supplier.com', '2024-06-16 04:30:00', 'supplierpass7', '34 Vendor Ave, City G, Country X', '789-012-3456'),
+('Ava', 'Taylor', 'ava.taylor@supplier.com', '2024-06-15 03:15:00', 'supplierpass8', '56 Distributor Ave, City H, Country Y', '890-123-4567'),
+('William', 'Anderson', 'william.anderson@supplier.com', '2024-06-14 02:00:00', 'supplierpass9', '78 Wholesaler Ave, City I, Country Z', '901-234-5678'),
+('Isabella', 'Thomas', 'isabella.thomas@supplier.com', '2024-06-13 01:45:00', 'supplierpass10', '90 Manufacturer Ave, City J, Country X', '012-345-6789'),
+('Ethan', 'Jackson', 'ethan.jackson@supplier.com', '2024-06-12 12:30:00', 'supplierpass11', '12 Supplier Blvd, City K, Country Y', '123-456-7891'),
+('Mia', 'White', 'mia.white@supplier.com', '2024-06-11 11:15:00', 'supplierpass12', '34 Vendor Blvd, City L, Country Z', '234-567-8902'),
+('Alexander', 'Harris', 'alexander.harris@supplier.com', '2024-06-10 10:00:00', 'supplierpass13', '56 Distributor Blvd, City M, Country X', '345-678-9013'),
+('Charlotte', 'Martin', 'charlotte.martin@supplier.com', '2024-06-09 09:30:00', 'supplierpass14', '78 Wholesaler Blvd, City N, Country Y', '456-789-0124'),
+('Lucas', 'Thompson', 'lucas.thompson@supplier.com', '2024-06-08 08:45:00', 'supplierpass15', '90 Manufacturer Blvd, City O, Country Z', '567-890-1235');
+
+INSERT INTO Categories (Name) VALUES
+('Electronics'),
+('Fashion'),
+('Home & Garden'),
+('Books'),
+('Toys'),
+('Sports & Outdoors'),
+('Health & Beauty'),
+('Automotive'),
+('Pets'),
+('Food & Grocery'),
+('Jewelry'),
+('Baby & Kids');
+
+
+
+INSERT INTO Products (Name, Description, Price, Images, Comment, SupplierID, CategoryID) VALUES
+('Smartphone X', 'High-end smartphone with advanced features', 799.99, 'image1.jpg', 'Great phone!', 1, 1),
+('Laptop Y', 'Thin and powerful laptop for professionals', 1299.99, 'image2.jpg', 'Excellent performance', 2, 1),
+('Wireless Headphones Z', 'Noise-cancelling wireless headphones', 249.99, 'image3.jpg', 'Clear sound quality', 3, 1),
+('Smart TV A', '4K Ultra HD Smart TV with HDR', 999.99, 'image4.jpg', 'Vivid colors and smart features', 4, 1),
+('Gaming Console B', 'Next-gen gaming console with powerful GPU', 499.99, 'image5.jpg', 'Immersive gaming experience', 5, 1),
+('Tablet C', 'Versatile tablet for work and entertainment', 399.99, 'image6.jpg', 'Portable and lightweight', 6, 1),
+('Camera D', 'Professional DSLR camera for photographers', 1499.99, 'image7.jpg', 'High-resolution images', 7, 1),
+('Wireless Router E', 'High-speed wireless router for home networking', 129.99, 'image8.jpg', 'Reliable internet connectivity', 8, 1),
+('Smart Watch F', 'Fitness tracker and smartwatch with health features', 299.99, 'image9.jpg', 'Tracks fitness metrics', 9, 1),
+('Desktop Computer G', 'Powerful desktop computer for multitasking', 1499.99, 'image10.jpg', 'Ideal for office use', 10, 1);
+
+
+
+INSERT INTO Products (Name, Description, Price, Images, Comment, SupplierID, CategoryID) VALUES
+('Men\'s Winter Jacket', 'Warm and stylish jacket for cold weather', 149.99, 'jacket1.jpg', 'Comfortable fit', 11, 2),
+('Women\'s Denim Jeans', 'Classic denim jeans with a modern twist', 79.99, 'jeans1.jpg', 'Durable and trendy', 12, 2),
+('Men\'s Formal Suit', 'Elegant suit for formal occasions', 299.99, 'suit1.jpg', 'Tailored fit', 13, 2),
+('Women\'s Casual Dress', 'Comfortable and versatile dress', 59.99, 'dress1.jpg', 'Perfect for everyday wear', 14, 2),
+('Men\'s Sports T-shirt', 'Breathable and lightweight sports t-shirt', 29.99, 'tshirt1.jpg', 'Moisture-wicking fabric', 15, 2),
+('Women\'s Running Shoes', 'Lightweight running shoes with excellent grip', 89.99, 'shoes1.jpg', 'Supportive and comfortable', 8, 2),
+('Men\'s Sweater', 'Cozy sweater for chilly evenings', 49.99, 'sweater1.jpg', 'Soft and warm', 5, 2),
+('Women\'s Skirt', 'Stylish skirt for various occasions', 39.99, 'skirt1.jpg', 'Flattering fit', 12, 2),
+('Men\'s Casual Shorts', 'Relaxed fit shorts for casual wear', 34.99, 'shorts1.jpg', 'Versatile and comfortable', 8, 2),
+('Women\'s Blouse', 'Elegant blouse for professional settings', 49.99, 'blouse1.jpg', 'Sophisticated look', 14, 2);
+
+
+
+INSERT INTO Products (Name, Description, Price, Images, Comment, SupplierID, CategoryID) VALUES
+('Outdoor Patio Set', 'Complete patio furniture set for outdoor relaxation', 699.99, 'patio_set.jpg', 'Durable and weather-resistant', 2, 3),
+('Indoor Plant Stand', 'Modern plant stand for indoor plants', 49.99, 'plant_stand.jpg', 'Adds elegance to home decor', 5, 3),
+('Robot Vacuum Cleaner', 'Smart vacuum cleaner for hands-free cleaning', 299.99, 'robot_vacuum.jpg', 'Efficient cleaning performance', 15, 3),
+('Kitchen Knife Set', 'Premium set of chef knives for culinary enthusiasts', 129.99, 'knife_set.jpg', 'Sharp and durable blades', 11, 3),
+('Gardening Tool Kit', 'Essential tools for gardening and landscaping', 79.99, 'gardening_tools.jpg', 'Comfortable grip handles', 6, 3),
+('Wall Art Decor', 'Contemporary wall art for living spaces', 89.99, 'wall_art.jpg', 'Enhances room aesthetics', 3, 3),
+('Smart Thermostat', 'Energy-saving thermostat for home climate control', 149.99, 'thermostat.jpg', 'Programmable settings', 2, 3),
+('Electric Pressure Washer', 'Powerful pressure washer for cleaning outdoor surfaces', 199.99, 'pressure_washer.jpg', 'High-pressure cleaning performance', 10, 3),
+('Solar Garden Lights', 'Decorative solar-powered lights for garden illumination', 39.99, 'garden_lights.jpg', 'Automatic dusk-to-dawn operation', 8, 3),
+('Air Purifier', 'HEPA filter air purifier for cleaner indoor air', 179.99, 'air_purifier.jpg', 'Captures allergens and pollutants', 4, 3);
+
+
+
+INSERT INTO Products (Name, Description, Price, Images, Comment, SupplierID, CategoryID) VALUES
+('The Great Gatsby', 'Classic novel by F. Scott Fitzgerald', 12.99, 'great_gatsby.jpg', 'A timeless masterpiece', 1, 4),
+('To Kill a Mockingbird', 'Pulitzer Prize-winning novel by Harper Lee', 14.99, 'mockingbird.jpg', 'Insightful and thought-provoking', 2, 4),
+('1984', 'Dystopian novel by George Orwell', 10.99, '1984.jpg', 'A chilling vision of the future', 3, 4),
+('The Catcher in the Rye', 'Controversial novel by J.D. Salinger', 11.99, 'catcher_in_the_rye.jpg', 'Captures teenage angst', 4, 4),
+('Harry Potter and the Sorcerer\'s Stone', 'First book in the Harry Potter series by J.K. Rowling', 16.99, 'harry_potter.jpg', 'Magical and enchanting', 5, 4),
+('The Hobbit', 'Fantasy novel by J.R.R. Tolkien', 13.99, 'hobbit.jpg', 'An epic adventure', 6, 4),
+('Pride and Prejudice', 'Classic romance novel by Jane Austen', 9.99, 'pride_and_prejudice.jpg', 'Timeless love story', 7, 4),
+('The Alchemist', 'Philosophical novel by Paulo Coelho', 8.99, 'alchemist.jpg', 'Inspiring and spiritual', 8, 4),
+('The Da Vinci Code', 'Mystery thriller by Dan Brown', 15.99, 'da_vinci_code.jpg', 'Intriguing and suspenseful', 9, 4),
+('The Hunger Games', 'Young adult dystopian novel by Suzanne Collins', 11.99, 'hunger_games.jpg', 'Action-packed and gripping', 10, 4);
+
+
+
+INSERT INTO Products (Name, Description, Price, Images, Comment, SupplierID, CategoryID) VALUES
+('Revlon Hair Dryer', 'Ionic hair dryer for fast drying and styling', 49.99, 'hair_dryer.jpg', 'Leaves hair smooth and shiny', 1, 7),
+('Neutrogena Hydro Boost Water Gel', 'Hydrating facial moisturizer with hyaluronic acid', 19.99, 'hydro_boost.jpg', 'Keeps skin moisturized all day', 2, 7),
+('Philips Sonicare Electric Toothbrush', 'Electric toothbrush for superior dental care', 69.99, 'sonicare_toothbrush.jpg', 'Improves gum health', 3, 7),
+('Maybelline New York Mascara', 'Volumizing mascara for long, thick lashes', 9.99, 'mascara.jpg', 'Defines and lengthens lashes', 4, 7),
+('Olay Regenerist Micro-Sculpting Cream', 'Anti-aging moisturizer with collagen peptide complex', 29.99, 'regenerist_cream.jpg', 'Firms and hydrates skin', 5, 7),
+('Dove Deep Moisture Body Wash', 'Nourishing body wash with gentle cleansers', 7.99, 'dove_body_wash.jpg', 'Softens and smoothes skin', 6, 7),
+('Gillette Fusion5 ProGlide Razor', 'Men\'s razor for a close shave', 12.99, 'gillette_razor.jpg', 'Smooth shaving experience', 7, 7),
+('Neutrogena Makeup Remover Cleansing Towelettes', 'Makeup remover wipes for gentle cleansing', 8.99, 'neutrogena_towelettes.jpg', 'Removes waterproof makeup', 8, 7),
+('CeraVe Facial Moisturizing Lotion', 'Daily face moisturizer with ceramides', 14.99, 'cerave_lotion.jpg', 'Restores and maintains skin\'s natural barrier', 9, 7),
+('Schick Hydro Silk Razor', 'Women\'s razor with moisturizing serum', 11.99, 'schick_razor.jpg', 'Hydrates skin during shaving', 10, 7);
+
+
+
+INSERT INTO Products (Name, Description, Price, Images, Comment, SupplierID, CategoryID) VALUES
+('Organic Quinoa', 'Nutritious whole grain quinoa', 7.99, 'quinoa.jpg', 'High in protein and fiber', 1, 10),
+('Extra Virgin Olive Oil', 'Premium quality olive oil from Italy', 12.99, 'olive_oil.jpg', 'Great for cooking and salads', 2, 10),
+('Whole Wheat Bread', 'Healthy whole wheat bread loaf', 3.49, 'whole_wheat_bread.jpg', 'Rich in fiber', 3, 10),
+('Fresh Strawberries', 'Sweet and juicy strawberries', 4.99, 'strawberries.jpg', 'Perfect for snacking and desserts', 4, 10),
+('Organic Baby Spinach', 'Fresh organic spinach leaves', 2.99, 'spinach.jpg', 'Rich in vitamins and antioxidants', 5, 10),
+('Almond Butter', 'Smooth almond butter spread', 9.99, 'almond_butter.jpg', 'Great source of healthy fats', 6, 10),
+('Free-Range Eggs', 'Farm-fresh free-range eggs', 5.49, 'eggs.jpg', 'High in protein and omega-3s', 7, 10),
+('Organic Greek Yogurt', 'Creamy organic Greek yogurt', 3.99, 'greek_yogurt.jpg', 'Probiotic-rich and delicious', 8, 10),
+('Green Tea', 'Premium Japanese green tea leaves', 6.99, 'green_tea.jpg', 'Antioxidant-packed and soothing', 9, 10),
+('Dark Chocolate Bar', 'Rich dark chocolate with 70% cocoa', 4.79, 'dark_chocolate.jpg', 'Indulgent and antioxidant-rich', 10, 10);
+
+
+INSERT INTO Orders (Description, CustomerID) VALUES
+('Fast shipping requested', 1),
+('Gift order for friend', 2),
+('Priority delivery', 3),
+('Bulk order for event', 4),
+('Subscription renewal', 5),
+('Standard delivery', 6),
+('Order with gift wrap', 7),
+('Urgent delivery needed', 8),
+('Special instructions included', 9),
+('First-time order', 10)
+
+INSERT INTO OrderItems (Quantity, OrderID, ProductID) VALUES
+(2, 1, 5),
+(1, 1, 10),
+(3, 2, 15),
+(2, 2, 20),
+(1, 3, 25),
+(4, 3, 30),
+(2, 4, 35),
+(3, 4, 40),
+(1, 5, 45),
+(2, 5, 50),
+(1, 6, 55),
+(2, 6, 60),
+(3, 7, 2),
+(1, 7, 7),
+(4, 8, 12),
+(2, 8, 17),
+(1, 9, 22),
+(3, 9, 27),
+(2, 10, 32),
+(1, 10, 37);
+
+UPDATE OrderItems oi
+JOIN Products p ON oi.ProductID = p.ProductID
+SET oi.Price = p.Price;
+
+
+INSERT INTO ReturnedItems (ReturnReason, ReturnQuantity, OrderItemID) VALUES
+('Wrong color', 1, 1),
+('Defective item', 1, 2),
+('Size too small', 1, 3),
+('Not as described', 1, 4),
+('Damaged during shipping', 1, 5),
+('Item missing parts', 1, 6),
+('Expired product', 1, 7),
+('Changed mind', 1, 8),
+('Duplicate order', 1, 9),
+('Wrong item received', 1, 10);
+
+INSERT INTO Tags (Name) VALUES ('Eco-Friendly');
+INSERT INTO Tags (Name) VALUES ('New Arrival');
+INSERT INTO Tags (Name) VALUES ('Sale');
+INSERT INTO Tags (Name) VALUES ('Best Seller');
+INSERT INTO Tags (Name) VALUES ('Limited Edition');
+INSERT INTO Tags (Name) VALUES ('Clearance');
+INSERT INTO Tags (Name) VALUES ('Seasonal');
+INSERT INTO Tags (Name) VALUES ('Organic');
+INSERT INTO Tags (Name) VALUES ('Handmade');
+INSERT INTO Tags (Name) VALUES ('Free Shipping');
+
+INSERT INTO ProductTags (ProductID, TagID)
+VALUES
+    (1, 1), (2, 2), (3, 3), (4, 4), (5, 5), (6, 6), (7, 7), (8, 8), (9, 9), (10, 10),
+    (11, 1), (12, 2), (13, 3), (14, 4), (15, 5), (16, 6), (17, 7), (18, 8), (19, 9), (20, 10),
+    (21, 1), (22, 2), (23, 3), (24, 4), (25, 5), (26, 6), (27, 7), (28, 8), (29, 9), (30, 10),
+    (31, 1), (32, 2), (33, 3), (34, 4), (35, 5), (36, 6), (37, 7), (38, 8), (39, 9), (40, 10),
+    (41, 1), (42, 2), (43, 3), (44, 4), (45, 5), (46, 6), (47, 7), (48, 8), (49, 9), (50, 10),
+    (51, 1), (52, 2), (53, 3), (54, 4), (55, 5), (56, 6), (57, 7), (58, 8), (59, 9), (60, 10);
